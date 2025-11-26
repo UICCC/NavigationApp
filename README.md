@@ -37,7 +37,7 @@ NavigationApp/
 
 🛠️ Installation & Setup
 1️⃣ Clone the repository
-git clone 
+git clone https://github.com/UICCC/NavigationApp.git
 cd NavigationApp
 
 2️⃣ Install dependencies
@@ -99,11 +99,4 @@ Command	Description
 npm start	Start Metro
 npm run android	Build/run Android app
 npm run ios	Build/run iOS app (Mac only)
-🤝 Contributing
 
-Pull requests are welcome!
-If you want to suggest major changes, open an issue first to discuss.
-
-📝 License
-
-This project is licensed under the MIT License.
