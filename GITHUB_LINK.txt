@@ -1,0 +1,12 @@
+Repository URL: https://github.com/your-repo-url
+Student Name: Yash Kumar
+Student ID: n01714110
+Lab: CPAN 213 - Lab 8
+Date: November 26, 2025
+
+Navigation Features Implemented:
+- Stack Navigator with 3 screens (Home, Details, Profile)
+- Tab Navigator with 3 tabs (Home, Search, Settings)
+- Parameter passing between screens
+- Custom header styling
+- Navigation actions (navigate, goBack, setParams)

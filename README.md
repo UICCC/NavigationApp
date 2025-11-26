@@ -1,97 +1,109 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+NavigationApp
 
-# Getting Started
+A simple React Native application demonstrating bottom-tab navigation, theming (light/dark mode), and basic screens such as Home, Profile, Settings, and more.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+ Features
 
-## Step 1: Start Metro
+🔹 React Navigation with Bottom Tabs
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+🔹 Light/Dark Theme Toggle
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+🔹 Reusable UI components
 
-```sh
-# Using npm
+🔹 Fully responsive layouts
+
+🔹 Android emulator support
+
+🔹 Ready for future API integration
+
+📂 Project Structure
+NavigationApp/
+│
+├── android/
+├── ios/
+├── src/
+│   ├── navigation/
+│   │   └── TabNavigator.js
+│   ├── screens/
+│   │   ├── HomeScreen.js
+│   │   ├── ProfileScreen.js
+│   │   ├── SettingsScreen.js
+│   ├── theme/
+│   │   ├── ThemeContext.js
+│   │   └── themes.js
+│   └── components/
+│
+└── App.js
+
+🛠️ Installation & Setup
+1️⃣ Clone the repository
+git clone 
+cd NavigationApp
+
+2️⃣ Install dependencies
+npm install
+
+
+or
+
+yarn install
+
+3️⃣ Start Metro Bundler
 npm start
 
-# OR using Yarn
-yarn start
-```
+📱 Running on Android
+Start your emulator manually:
+<Your SDK Path>/emulator/emulator.exe @Your_AVD_Name
 
-## Step 2: Build and run your app
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+Then run:
 
-### Android
+npx react-native run-android
 
-```sh
-# Using npm
-npm run android
 
-# OR using Yarn
-yarn android
-```
+If you see “No devices found”, make sure your emulator is booted.
 
-### iOS
+🎨 Theming (Dark Mode Support)
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+This project uses a ThemeContext that wraps the entire app.
+Dark mode automatically updates UI elements such as:
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+Background colors
 
-```sh
-bundle install
-```
+Text colors
 
-Then, and every time you update your native dependencies, run:
+Tab bar colors
 
-```sh
-bundle exec pod install
-```
+Status bar appearance
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+You can toggle dark mode inside Settings Screen.
 
-```sh
-# Using npm
-npm run ios
+📸 Screenshots (Add your own)
+[ ] Home Screen  
+[ ] Dark Mode  
+[ ] Settings Screen  
+[ ] Profile Screen  
 
-# OR using Yarn
-yarn ios
-```
+📦 Dependencies
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+Key libraries:
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+Library	Purpose
+react-navigation	Navigation system
+@react-navigation/bottom-tabs	Bottom tab UI
+react-native-gesture-handler	Required by navigation
+react-native-reanimated	Navigation animations
+react-native-vector-icons	Icons
+📄 Scripts
+Command	Description
+npm start	Start Metro
+npm run android	Build/run Android app
+npm run ios	Build/run iOS app (Mac only)
+🤝 Contributing
 
-## Step 3: Modify your app
+Pull requests are welcome!
+If you want to suggest major changes, open an issue first to discuss.
 
-Now that you have successfully run the app, let's make changes!
+📝 License
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+This project is licensed under the MIT License.
